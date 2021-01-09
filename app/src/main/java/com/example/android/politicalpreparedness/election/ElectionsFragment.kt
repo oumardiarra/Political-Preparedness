@@ -7,12 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.example.android.politicalpreparedness.databinding.FragmentElectionBinding
 import com.example.android.politicalpreparedness.election.adapter.ElectionListAdapter
 import com.example.android.politicalpreparedness.election.adapter.ElectionListener
 
 class ElectionsFragment : Fragment() {
-private lateinit var adapter:ElectionListAdapter
+    private lateinit var adapter: ElectionListAdapter
     private val viewModel: ElectionsViewModel by lazy {
         val activity = requireNotNull(this.activity) {
             "You can only access the viewModel after onViewCreated()"
@@ -30,17 +31,24 @@ private lateinit var adapter:ElectionListAdapter
         binding.lifecycleOwner = this
         binding.electionViewModel = viewModel
 
-         adapter = ElectionListAdapter(ElectionListener {
-
+        adapter = ElectionListAdapter(ElectionListener {
+            viewModel.displayElectiondDetails(it);
         })
 
 
-        binding.recyclerUpcomingEl.adapter=adapter
+
         viewModel.elections.observe(viewLifecycleOwner, Observer {
             it?.let {
                 adapter.submitList(it)
             }
         })
+        viewModel.navigateToSelectedElection.observe(viewLifecycleOwner, Observer {
+            if (it != null) {
+                findNavController().navigate(ElectionsFragmentDirections.actionElectionsFragmentToElectionsDetailsFragment(it))
+                viewModel.displayElectionDetailsComplete()
+            }
+        })
+        binding.recyclerUpcomingEl.adapter = adapter
         return binding.root
         //TODO: Add ViewModel values and create ViewModel
 

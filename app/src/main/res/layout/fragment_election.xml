@@ -15,7 +15,16 @@
         android:layout_height="match_parent"
         tools:context="com.example.android.politicalpreparedness.MainActivity">
 
-
+        <ProgressBar
+            android:id="@+id/status_loading_wheel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:progressStaus="@{electionViewModel.elections}" />
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
             android:layout_width="wrap_content"
@@ -43,13 +52,14 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             android:padding="12dp"
             app:layout_constraintBottom_toTopOf="@id/guideline"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textHeaderUElections"
             app:listElection="@{electionViewModel.elections}"
-            tools:itemCount="3"
+            tools:itemCount="16"
             tools:listitem="@layout/election_items"></androidx.recyclerview.widget.RecyclerView>
 
         <TextView

@@ -6,24 +6,22 @@ import com.squareup.moshi.*
 import kotlinx.android.parcel.Parcelize
 import java.util.*
 
-@Entity(tableName = "election_table")
-@Parcelize
-data class Election(
-        @PrimaryKey val id: Int,
-        @ColumnInfo(name = "name")val name: String,
-        @ColumnInfo(name = "electionDay")val electionDay: Date,
-        @Embedded(prefix = "division_") @Json(name="ocdDivisionId") val division: Division
-):Parcelable
 
-/*
-fun List<Election>.asDomainModel():List<com.example.android.politicalpreparedness.domain.Election>{
+data class Election(
+        val id: Int,
+        val name: String,
+        val electionDay: Date,
+        @Json(name = "ocdDivisionId") val division: Division
+)
+
+fun List<Election>.asDataBaseModel(): List<com.example.android.politicalpreparedness.database.model.Election> {
     return map {
-        com.example.android.politicalpreparedness.domain.Election(
+        com.example.android.politicalpreparedness.database.model.Election(
                 id = it.id,
                 name = it.name,
                 electionDay = it.electionDay,
-                division = it.division
+                division = it.division.asDataBaseModel()
         )
     }
 
-}*/
+}

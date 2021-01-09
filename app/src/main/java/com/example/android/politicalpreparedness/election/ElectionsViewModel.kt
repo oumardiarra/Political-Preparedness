@@ -6,8 +6,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.android.politicalpreparedness.database.ElectionDatabase.Companion.getInstance
-import com.example.android.politicalpreparedness.network.models.Division
-import com.example.android.politicalpreparedness.network.models.Election
+import com.example.android.politicalpreparedness.domain.Election
 import com.example.android.politicalpreparedness.repository.ElectionRepository
 import kotlinx.coroutines.launch
 import java.util.*
@@ -16,8 +15,9 @@ import java.util.*
 class ElectionsViewModel(application: Application) : AndroidViewModel(application) {
     private val database = getInstance(application)
     private val repository = ElectionRepository(database)
-    //private var _list = MutableLiveData<List<Election>>()
-   // val list: LiveData<List<Election>> get() = _list
+    private var _navigateToSelectedElection = MutableLiveData<Election>()
+    val navigateToSelectedElection: LiveData<Election>
+        get() = _navigateToSelectedElection
 
 
     init {
@@ -26,6 +26,7 @@ class ElectionsViewModel(application: Application) : AndroidViewModel(applicatio
         //_list.value = listOf(Election(1, "name", calendar.time, Division("", "", "")))
         refreshElection()
     }
+
     var elections = repository.electionList
 
 
@@ -37,6 +38,13 @@ class ElectionsViewModel(application: Application) : AndroidViewModel(applicatio
             repository.refreshElections()
         }
     }
+
     //TODO: Create functions to navigate to saved or upcoming election voter info
+    fun displayElectiondDetails(election: Election) {
+        _navigateToSelectedElection.value = election
+    }
+    fun displayElectionDetailsComplete() {
+        _navigateToSelectedElection.value = null
+    }
 
 }

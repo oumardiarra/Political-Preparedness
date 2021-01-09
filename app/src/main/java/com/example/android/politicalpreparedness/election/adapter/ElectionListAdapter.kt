@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.politicalpreparedness.databinding.ElectionItemsBinding
 
-import com.example.android.politicalpreparedness.network.models.Election
+import com.example.android.politicalpreparedness.domain.Election
 
 
 class ElectionListAdapter(private val clickListener: ElectionListener) : ListAdapter<Election, ElectionListAdapter.ElectionViewHolder>(ElectionDiffCallback) {

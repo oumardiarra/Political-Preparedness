@@ -5,7 +5,8 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.example.android.politicalpreparedness.network.models.Election
+import com.example.android.politicalpreparedness.database.model.Election
+
 
 @Database(entities = [Election::class], version = 1, exportSchema = false)
 @TypeConverters(Converters::class)
