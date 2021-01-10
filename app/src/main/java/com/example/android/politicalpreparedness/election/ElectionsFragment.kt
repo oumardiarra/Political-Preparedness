@@ -14,6 +14,7 @@ import com.example.android.politicalpreparedness.election.adapter.ElectionListen
 
 class ElectionsFragment : Fragment() {
     private lateinit var adapter: ElectionListAdapter
+    private lateinit var savedElectionAdapter: ElectionListAdapter
     private val viewModel: ElectionsViewModel by lazy {
         val activity = requireNotNull(this.activity) {
             "You can only access the viewModel after onViewCreated()"
@@ -34,6 +35,9 @@ class ElectionsFragment : Fragment() {
         adapter = ElectionListAdapter(ElectionListener {
             viewModel.displayElectiondDetails(it);
         })
+        savedElectionAdapter=ElectionListAdapter(ElectionListener {
+            viewModel.displayElectiondDetails(it);
+        })
 
 
 
@@ -42,13 +46,19 @@ class ElectionsFragment : Fragment() {
                 adapter.submitList(it)
             }
         })
+        viewModel.savedElection.observe(viewLifecycleOwner, Observer {
+            it?.let {
+                savedElectionAdapter.submitList(it)
+            }
+        })
         viewModel.navigateToSelectedElection.observe(viewLifecycleOwner, Observer {
             if (it != null) {
-                findNavController().navigate(ElectionsFragmentDirections.actionElectionsFragmentToElectionsDetailsFragment(it))
+                findNavController().navigate(ElectionsFragmentDirections.actionElectionsFragmentToVoterInfoFragment(it))
                 viewModel.displayElectionDetailsComplete()
             }
         })
         binding.recyclerUpcomingEl.adapter = adapter
+        binding.recycleSavedElections.adapter = savedElectionAdapter
         return binding.root
         //TODO: Add ViewModel values and create ViewModel
 

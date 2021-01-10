@@ -6,8 +6,8 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
@@ -31,40 +31,38 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f453043-ba7f-4e9e-8cae-0664e0f89864" name="Default Changelist" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="6f453043-ba7f-4e9e-8cae-0664e0f89864" name="Default Changelist" comment="Add navigation from election list to detail">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/starter.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/starter.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/database/ElectionDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/database/ElectionDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/database/ElectionDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/database/ElectionDatabase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/database/model/Election.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/database/model/Election.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/domain/Division.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/domain/Division.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/domain/Election.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/domain/Election.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/election/ElectionsDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/election/ElectionsDetailsFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/election/ElectionsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/election/ElectionsFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/election/ElectionsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/election/ElectionsViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/election/VoterInfoFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/election/VoterInfoFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/election/VoterInfoViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/election/VoterInfoViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/election/VoterInfoViewModelFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/election/VoterInfoViewModelFactory.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/election/adapter/BindingAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/election/adapter/BindingAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/election/adapter/ElectionListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/election/adapter/ElectionListAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/network/models/Division.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/network/models/Division.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/network/models/Election.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/network/models/Election.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/network/CivicsApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/network/CivicsApiService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/network/CivicsHttpClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/network/CivicsHttpClient.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/network/models/VoterInfoResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/network/models/VoterInfoResponse.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/repository/ElectionRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/repository/ElectionRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/election_items.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/election_items.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_election.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_election.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_elections_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_elections_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_voter_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_voter_info.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
@@ -73,7 +71,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[2418A132000955]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RF8M33P5MKH]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -110,8 +108,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="2418A132000955" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-01-07T15:15:12.630Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_API_30_x86" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-01-10T10:37:50.483Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -209,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610118176374</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add navigation from election list to detail">
+      <created>1610211986459</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610211986460</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,7 +231,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Add navigation from election list to detail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add navigation from election list to detail" />
   </component>
   <component name="WindowStateProjectService">
     <state x="447" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609958418567">
@@ -237,10 +243,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="436" y="59" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1610044754255" />
-    <state x="412" y="153" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1610210106060">
+    <state x="412" y="153" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1610292193367">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="412" y="153" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1610210106060" />
+    <state x="412" y="153" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1610292193367" />
     <state x="374" y="90" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610033017070">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -249,33 +255,37 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="118" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1609958293882" />
-    <state x="527" y="149" key="AndroidCreateXmlResourceDialog" timestamp="1610017146356">
+    <state x="527" y="149" key="AndroidCreateXmlResourceDialog" timestamp="1610299694681">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="527" y="149" key="AndroidCreateXmlResourceDialog/0.0.1366.728@0.0.1366.728" timestamp="1610017146356" />
+    <state x="527" y="149" key="AndroidCreateXmlResourceDialog/0.0.1366.728@0.0.1366.728" timestamp="1610299694681" />
     <state x="424" y="98" key="FileChooserDialogImpl" timestamp="1609844523916">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="424" y="98" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609844523916" />
-    <state width="1286" height="41" key="GridCell.Tab.0.bottom" timestamp="1610051772411">
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1610298776353">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="41" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610051772411" />
-    <state width="1286" height="41" key="GridCell.Tab.0.center" timestamp="1610051772411">
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610298776353" />
+    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1610298776353">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="41" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1610051772411" />
-    <state width="1286" height="41" key="GridCell.Tab.0.left" timestamp="1610051772409">
+    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1610298776353" />
+    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1610298776353">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="41" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1610051772409" />
-    <state width="1286" height="41" key="GridCell.Tab.0.right" timestamp="1610051772411">
+    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1610298776353" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1610298776353">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="41" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1610051772411" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1610118193545">
+    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1610298776353" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1610212001805">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1610118193545" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1610212001805" />
+    <state x="346" y="48" width="672" height="678" key="search.everywhere.popup" timestamp="1610279360520">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="48" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1610279360520" />
   </component>
 </project>

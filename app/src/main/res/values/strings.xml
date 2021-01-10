@@ -7,7 +7,12 @@
     <string name="saved_elections_header">Saved Elections</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <string name="election_information_detail_title">Election Information</string>
+    <string name="voting_location">Voting Location</string>
+    <string name="baillot_information">Baillot Information</string>
+    <string name="follow_election_text">Follow Election</string>
+    <string name="un_follow_election_text">Unfollow Election</string>
+    <string name="correspondance_address_text">Correspondance Address</string>
     <!-- TODO: Add necessary string values -->
 
 </resources>

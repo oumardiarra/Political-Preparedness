@@ -9,3 +9,12 @@ data class Division(
         val country: String,
         val state: String
 ):Parcelable
+
+
+fun Division.asDataBaseModel():com.example.android.politicalpreparedness.database.model.Division{
+    return com.example.android.politicalpreparedness.database.model.Division(
+            id=this.id,
+            country = this.country,
+            state = this.state
+    )
+}

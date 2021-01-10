@@ -13,5 +13,17 @@ data class Election(
         val id: Int,
         val name: String,
         val electionDay: Date,
-        val division: Division
+        val division: Division,
+        var isSaved: Boolean
 ) : Parcelable
+
+
+fun Election.asDatabaseModel():com.example.android.politicalpreparedness.database.model.Election{
+    return com.example.android.politicalpreparedness.database.model.Election(
+            id = this.id,
+            name=this.name,
+            electionDay = this.electionDay,
+            division = this.division.asDataBaseModel(),
+            isSaved = this.isSaved
+    )
+}

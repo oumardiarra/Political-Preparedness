@@ -12,7 +12,8 @@ data class Election(
         @PrimaryKey val id: Int,
         @ColumnInfo(name = "name") val name: String,
         @ColumnInfo(name = "electionDay") val electionDay: Date,
-        @Embedded(prefix = "division_") val division: Division
+        @Embedded(prefix = "division_") val division: Division,
+        val isSaved: Boolean = false
 )
 
 fun List<Election>.asDomainModel(): List<com.example.android.politicalpreparedness.domain.Election> {
@@ -21,7 +22,8 @@ fun List<Election>.asDomainModel(): List<com.example.android.politicalpreparedne
                 id = it.id,
                 name = it.name,
                 electionDay = it.electionDay,
-                division = it.division.asDomainModel()
+                division = it.division.asDomainModel(),
+                isSaved = it.isSaved
         )
     }
 }

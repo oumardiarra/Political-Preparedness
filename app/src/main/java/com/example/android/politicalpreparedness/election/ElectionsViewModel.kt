@@ -21,14 +21,12 @@ class ElectionsViewModel(application: Application) : AndroidViewModel(applicatio
 
 
     init {
-        val calendar = Calendar.getInstance()
 
-        //_list.value = listOf(Election(1, "name", calendar.time, Division("", "", "")))
         refreshElection()
     }
 
     var elections = repository.electionList
-
+    var savedElection = repository.allSavedElections
 
     //TODO: Create live data val for saved elections
 
@@ -43,8 +41,19 @@ class ElectionsViewModel(application: Application) : AndroidViewModel(applicatio
     fun displayElectiondDetails(election: Election) {
         _navigateToSelectedElection.value = election
     }
+
     fun displayElectionDetailsComplete() {
         _navigateToSelectedElection.value = null
+    }
+
+    fun saveElection(election: Election) {
+        viewModelScope.launch {
+            if (!election.isSaved)
+                repository.saveElection(election)
+            else {
+                repository.unFollowElection(election)
+            }
+        }
     }
 
 }
