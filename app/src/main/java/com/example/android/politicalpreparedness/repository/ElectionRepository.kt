@@ -7,6 +7,7 @@ import com.example.android.politicalpreparedness.database.ElectionDatabase
 import com.example.android.politicalpreparedness.database.model.asDomainModel
 import com.example.android.politicalpreparedness.domain.Election
 import com.example.android.politicalpreparedness.network.CivicsApi
+import com.example.android.politicalpreparedness.network.models.RepresentativeResponse
 import com.example.android.politicalpreparedness.network.models.VoterInfoResponse
 import com.example.android.politicalpreparedness.network.models.asDataBaseModel
 import kotlinx.coroutines.Dispatchers
@@ -88,5 +89,22 @@ class ElectionRepository(private val database: ElectionDatabase) {
                 Timber.e("Exception occurs when getting voterInfo: ${ex.message}")
             }
         }
+    }
+
+    suspend fun getRepresentative(address: String): RepresentativeResponse? {
+        var representativeInfo: RepresentativeResponse? = null
+        withContext(Dispatchers.IO) {
+            try {
+                Timber.i("Start getting representative info for address ${address}...")
+                representativeInfo = CivicsApi.retrofitService.getRepresentatives(address)
+                Timber.i("End getting representative info for address ${address}...")
+
+            } catch (ex: Exception) {
+                Timber.i("Exception getting representative info for address ${address}... :${ex.message}")
+
+
+            }
+        }
+        return representativeInfo
     }
 }

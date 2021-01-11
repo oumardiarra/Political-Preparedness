@@ -5,7 +5,6 @@
     <string name="find_my_representatives">Find My Representatives</string>
     <string name="upcoming_elections_header">Upcoming Elections</string>
     <string name="saved_elections_header">Saved Elections</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="election_information_detail_title">Election Information</string>
     <string name="voting_location">Voting Location</string>
@@ -13,6 +12,10 @@
     <string name="follow_election_text">Follow Election</string>
     <string name="un_follow_election_text">Unfollow Election</string>
     <string name="correspondance_address_text">Correspondance Address</string>
-    <!-- TODO: Add necessary string values -->
+    <string name="find_my_representatives_btn_text">Find My Representatives</string>
+    <string name="use_my_location_btn_text">Use my Location</string>
+    <string name="permission_denied_explanation">You need to grant location permission in order to select the location.</string>
+    <string name="settings">Settings</string>
+    <string name="location_required_error">Location services must be enabled to use the app</string>
 
 </resources>

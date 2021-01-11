@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+<variable
+    name="representativeInfo"
+    type="com.example.android.politicalpreparedness.representative.model.Representative" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:profileImage="@{representativeInfo.official.photoUrl}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_profile" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="President of United States"
+            android:text="@{representativeInfo.office.name}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgProfil"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textRole"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            tools:text="Donald Trump"
+            android:text="@{representativeInfo.official.name}"
+            style="@style/TextAppearance.AppCompat.Caption"
+            app:layout_constraintEnd_toStartOf="@+id/imgBrowse"
+            app:layout_constraintStart_toEndOf="@+id/imgProfil"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+        <ImageView
+            android:id="@+id/imgFaceBook"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imgTwitter"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle"
+            app:srcCompat="@drawable/ic_facebook" />
+
+        <ImageView
+            android:id="@+id/imgTwitter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle"
+            app:srcCompat="@drawable/ic_twitter" />
+
+        <ImageView
+            android:id="@+id/imgBrowse"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imgFaceBook"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle"
+            app:srcCompat="@drawable/ic_www" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            tools:text="Republicain party"
+            android:textSize="10sp"
+            android:text="@{representativeInfo.official.party}"
+            style="@style/TextAppearance.AppCompat.Caption"
+            app:layout_constraintEnd_toStartOf="@+id/imgBrowse"
+            app:layout_constraintStart_toEndOf="@+id/imgProfil"
+            app:layout_constraintTop_toBottomOf="@+id/textRole" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
