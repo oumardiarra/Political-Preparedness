@@ -16,6 +16,7 @@ import android.text.TextUtils
 import android.view.*
 import android.view.inputmethod.InputMethodManager
 import android.widget.ArrayAdapter
+import android.widget.AutoCompleteTextView
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -53,6 +54,7 @@ class DetailFragment : Fragment() {
         const val REQUEST_TURN_DEVICE_LOCATION_ON = 29
     }
 
+    lateinit var autoCompleteTextView: AutoCompleteTextView
     lateinit var binding: FragmentRepresentativeBinding
 
     override fun onCreateView(inflater: LayoutInflater,
@@ -62,13 +64,16 @@ class DetailFragment : Fragment() {
 
         binding = FragmentRepresentativeBinding.inflate(inflater)
         val states = resources.getStringArray(R.array.states)
-        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, states)
-        binding.state.adapter = adapter
+        val adapter = ArrayAdapter(requireContext(), R.layout.state_list_item, states)
+        autoCompleteTextView = (binding.state.editText as AutoCompleteTextView)
+        autoCompleteTextView.setAdapter(adapter)
+        autoCompleteTextView.setText(states[0], false)
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
         binding.buttonSearch.setOnClickListener {
-            Timber.e("buttonSearch ${binding.state.selectedItem.toString()}")
-            viewModel.getRepresentative(binding.state.selectedItem.toString())
+            hideKeyboard()
+            Timber.e("buttonSearch ${autoCompleteTextView?.text.toString()}")
+            viewModel.getRepresentative(autoCompleteTextView?.text.toString())
         }
         binding.buttonLocation.setOnClickListener {
             checkLocationPermissions()
@@ -144,7 +149,8 @@ class DetailFragment : Fragment() {
                 viewModel.setAddressGromGeoCaode(address)
                 val states = resources.getStringArray(R.array.states)
                 val selectedStateIndex = states.indexOf(address.state)
-                binding.state.setSelection(selectedStateIndex)
+                Timber.e("selectedStateIndex is ${selectedStateIndex}")
+               // autoCompleteTextView.setSelection(selectedStateIndex)
                 viewModel.getRepresentative(address.state)
             } else {
                 Timber.e("fusedLocationProviderClient is null")

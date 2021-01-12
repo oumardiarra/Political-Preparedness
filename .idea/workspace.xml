@@ -31,16 +31,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f453043-ba7f-4e9e-8cae-0664e0f89864" name="Default Changelist" comment="display VoterInfo deail and load baillot url to webview">
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_exifinterface_exifinterface_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_11_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_11_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/representative_items.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/fragment_representative_scene.xml" afterDir="false" />
+    <list default="true" id="6f453043-ba7f-4e9e-8cae-0664e0f89864" name="Default Changelist" comment="Add representative list">
+      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -52,23 +44,17 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/starter.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/starter.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/network/CivicsApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/network/CivicsApiService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/network/CivicsHttpClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/network/CivicsHttpClient.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/repository/ElectionRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/repository/ElectionRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/representative/RepresentativeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/representative/RepresentativeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/representative/RepresentativeViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/representative/RepresentativeViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/representative/adapter/RepresentativeBindingAdapters.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/representative/adapter/RepresentativeBindingAdapters.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/representative/adapter/RepresentativeListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/politicalpreparedness/representative/adapter/RepresentativeListAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_election.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_election.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_representative.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_representative.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_voter_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_voter_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/fragment_representative_scene.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/fragment_representative_scene.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610300032237</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add representative list">
+      <created>1610398582653</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610398582653</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,7 +237,8 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Add navigation from election list to detail" />
     <MESSAGE value="display VoterInfo deail and load baillot url to webview" />
-    <option name="LAST_COMMIT_MESSAGE" value="display VoterInfo deail and load baillot url to webview" />
+    <MESSAGE value="Add representative list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add representative list" />
   </component>
   <component name="WindowStateProjectService">
     <state x="447" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609958418567">
@@ -263,38 +257,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="374" y="90" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1610033017070" />
-    <state x="263" y="118" key="AndroidCreateResourceFileDialog" timestamp="1610379396226">
+    <state x="263" y="118" key="AndroidCreateResourceFileDialog" timestamp="1610452781228">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="263" y="118" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1610379396226" />
-    <state x="527" y="149" key="AndroidCreateXmlResourceDialog" timestamp="1610365998758">
+    <state x="263" y="118" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1610452781228" />
+    <state x="527" y="149" key="AndroidCreateXmlResourceDialog" timestamp="1610451370440">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="527" y="149" key="AndroidCreateXmlResourceDialog/0.0.1366.728@0.0.1366.728" timestamp="1610365998758" />
+    <state x="527" y="149" key="AndroidCreateXmlResourceDialog/0.0.1366.728@0.0.1366.728" timestamp="1610451370440" />
     <state x="424" y="98" key="FileChooserDialogImpl" timestamp="1609844523916">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="424" y="98" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609844523916" />
-    <state width="1286" height="2" key="GridCell.Tab.0.bottom" timestamp="1610395864850">
+    <state width="1323" height="-40" key="GridCell.Tab.0.bottom" timestamp="1610449768403">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610395864850" />
-    <state width="1286" height="2" key="GridCell.Tab.0.center" timestamp="1610395864850">
+    <state width="1323" height="-40" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610449768403" />
+    <state width="1323" height="-40" key="GridCell.Tab.0.center" timestamp="1610449768403">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1610395864850" />
-    <state width="1286" height="2" key="GridCell.Tab.0.left" timestamp="1610395864850">
+    <state width="1323" height="-40" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1610449768403" />
+    <state width="1323" height="-40" key="GridCell.Tab.0.left" timestamp="1610449768402">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1610395864850" />
-    <state width="1286" height="2" key="GridCell.Tab.0.right" timestamp="1610395864850">
+    <state width="1323" height="-40" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1610449768402" />
+    <state width="1323" height="-40" key="GridCell.Tab.0.right" timestamp="1610449768403">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1610395864850" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1610300043522">
+    <state width="1323" height="-40" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1610449768403" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1610398592496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1610300043522" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1610398592496" />
     <state x="339" y="164" key="run.anything.popup" timestamp="1610372448926">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
