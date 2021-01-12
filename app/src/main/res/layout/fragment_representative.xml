@@ -40,7 +40,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Address Line 2"
+                android:hint="@string/address_line_1_hint"
                 android:inputType="textPostalAddress"
                 android:text="@{viewModel.address.line1}">
 
@@ -67,7 +67,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Address Line 2"
+                android:hint="@string/address_line_2_hint"
                 android:inputType="textPostalAddress"
                 android:text="@{viewModel.address.line2}">
 
@@ -97,7 +97,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="City"
+                android:hint="@string/city_hint"
                 android:text="@{viewModel.address.city}"></com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
         <!--<EditText
@@ -153,7 +153,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLength="5"
-                android:hint="Zip Code"
+                android:hint="@string/zip_code_hint"
                 android:text="@{viewModel.address.zip}"></com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
 

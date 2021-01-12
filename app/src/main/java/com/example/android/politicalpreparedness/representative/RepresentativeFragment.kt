@@ -150,7 +150,9 @@ class DetailFragment : Fragment() {
                 val states = resources.getStringArray(R.array.states)
                 val selectedStateIndex = states.indexOf(address.state)
                 Timber.e("selectedStateIndex is ${selectedStateIndex}")
-               // autoCompleteTextView.setSelection(selectedStateIndex)
+                if (selectedStateIndex != -1) {
+                    autoCompleteTextView.setSelection(selectedStateIndex)
+                }
                 viewModel.getRepresentative(address.state)
             } else {
                 Timber.e("fusedLocationProviderClient is null")

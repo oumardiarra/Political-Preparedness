@@ -19,7 +19,7 @@ android {
     }
     buildTypes {
         buildTypes.each {
-            it.buildConfigField 'String', 'CIVIC_API_KEY',"\"YOUR API KEY HERE\""
+            it.buildConfigField 'String', 'CIVIC_API_KEY',"\"Your API KEY HERE\""
         }
         release {
             minifyEnabled false

@@ -18,5 +18,9 @@
     <string name="settings">Settings</string>
     <string name="location_required_error">Location services must be enabled to use the app</string>
     <string name="representative_search">Representative Search</string>
+    <string name="address_line_1_hint">Address Line 1</string>
+    <string name="address_line_2_hint">Address Line 2</string>
+    <string name="city_hint">City</string>
+    <string name="zip_code_hint">Zip Code</string>
 
 </resources>
