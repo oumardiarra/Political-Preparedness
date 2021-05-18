@@ -27,3 +27,12 @@ To get started with this project, simply pull the repository and import the proj
 
 ## Report Issues
 Notice any issues with a repository? Please file a github issue in the repository.
+
+### Screenshots
+
+<p float="left">
+  <img src="screen_1.jpg" width="300" />
+  <img src="screen_2.jpg" width="300" /> 
+  <img src="screen_3.jpg" width="300" />
+  <img src="screen_4.jpg" width="300" />
+</p>
